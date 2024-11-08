@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import './modal.css'
 
-const Modal = ({ isOpen, onOverlayPressed, children }) => {
+type ModalProps = {
+  isOpen: boolean;
+  onOverlayPressed: () => void;
+  children: any;
+};
+
+const Modal: React.FC<ModalProps>  = ({ isOpen, onOverlayPressed, children }) => {
   if (!isOpen) return null;
 
   return (
