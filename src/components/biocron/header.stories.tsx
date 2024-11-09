@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Header from './header';
+import { BrowserRouter } from 'react-router-dom';
 
 const meta: Meta<typeof Header> = {
     title: 'Biocron/Header',
@@ -8,9 +9,7 @@ const meta: Meta<typeof Header> = {
     parameters: {
         layout: 'centered',
     },
-    argTypes: {
-       
-    },
+    decorators : [(Story) => (<BrowserRouter><Story/></BrowserRouter>)]
 };
 
 export default meta;
