@@ -1,5 +1,4 @@
 import React, { MouseEventHandler } from 'react';
-import { clsx } from 'clsx';
 import '../../index.css';
 
 type ButtonColor = 'lightBlue' | 'blue';
@@ -24,7 +23,6 @@ const CornerButton: React.FC<ButtonProps> = ({
     color = 'lightBlue',
     onClick,
     disabled,
-    Icon,
 }) => {
 
     return (
