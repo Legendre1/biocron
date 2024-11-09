@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import CornerButton from './corner-button'
 
 const meta: Meta<typeof CornerButton> = {
-    title: 'Biocron/BackButton',
+    title: 'Biocron/CornerButton',
     component: CornerButton,
     parameters: {
         layout: 'centered',
