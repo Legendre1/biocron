@@ -1,5 +1,6 @@
 
 import Header from './../components/biocron/header'
+import Minibio from '../components/biocron/minibio'
 
 function HomeScreen() {
 
@@ -7,7 +8,7 @@ function HomeScreen() {
   return (
     <>
       <Header />
-      <h1>Home</h1>
+      <Minibio />
     </>
   )
 }
