@@ -7,7 +7,7 @@ const meta: Meta<typeof Header> = {
     title: 'Biocron/Header',
     component: Header,
     parameters: {
-        layout: 'centered',
+        layout: 'left',
     },
     decorators : [(Story) => (<BrowserRouter><Story/></BrowserRouter>)]
 };
