@@ -1,6 +1,6 @@
-
 import Header from './../components/biocron/header'
-import Minibio from '../components/biocron/minibio'
+import Minibio from '../components/biocron/home/minibio'
+import Miniportfolio from '../components/biocron/home/miniportfolio'
 
 function HomeScreen() {
 
@@ -8,7 +8,11 @@ function HomeScreen() {
   return (
     <>
       <Header />
-      <Minibio />
+      <div className='flex place-content-center w-screen'>
+        <Minibio />
+        <Miniportfolio />
+      </div>
+      
     </>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import laios from './assets/laiosHeadshot.png'
+import laios from './../assets/laiosHeadshot.png'
 
 const Minibio: React.FC  = () => {
 
