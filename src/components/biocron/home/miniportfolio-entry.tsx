@@ -2,7 +2,7 @@ import React from 'react';
 import blackjack from './../assets/vgw-blackjack.png'
 import ptBoss from './../assets/pt-boss.png'
 import rooftops from './../assets/rooftops.jpg'
-import darkflow from './../assets/flow.png'
+import pics from './../assets/pics.png'
 
 type MiniPortfolioProps = {
   game: string;
@@ -33,9 +33,9 @@ const MiniportfolioEntry: React.FC<MiniPortfolioProps>  = ({game}) => {
       gameOwner = "Backflip Studios"
       break;
     }
-    case "df":{
-      gameImage = darkflow;
-      gameName = 'Dark Flow';
+    case "pics":{
+      gameImage = pics;
+      gameName = 'hashPICS';
       gameOwner = "Aureus Studios"
       break;
     }

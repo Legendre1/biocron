@@ -25,6 +25,6 @@ export const NJR: Story = {
   args: {game: "njr"}
 };
 
-export const DarkFlow: Story = {
-  args: {game: "df"}
+export const HashPics: Story = {
+  args: {game: "pics"}
 };
