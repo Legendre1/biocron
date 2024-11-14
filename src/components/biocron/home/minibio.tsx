@@ -5,7 +5,7 @@ const Minibio: React.FC  = () => {
 
 
   return (
-    <div className="flex flex-row bg-gray-900 w-96 h-64 rounded-lg"> 
+    <div className="flex flex-row bg-gray-900 w-96 h-64 rounded-lg mx-4"> 
       <img className='basis-1/2 rounded-lg m-2' src={laios}></img>
       <div className='basis-1/2 m-2 flex flex-col '>
         <div className='text-2xl my-1'>Jon Golden</div>

@@ -8,7 +8,7 @@ function HomeScreen() {
   return (
     <>
       <Header />
-      <div className='flex place-content-center w-screen'>
+      <div className='flex place-content-center w-screen mt-20'>
         <Minibio />
         <Miniportfolio />
       </div>
