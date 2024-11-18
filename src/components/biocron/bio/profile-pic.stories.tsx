@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Minibio from './minibio';
+import ProfilePic from './profile-pic';
 import { BrowserRouter } from 'react-router-dom';
 
-const meta: Meta<typeof Minibio> = {
-    title: 'Biocron/Home/Minibio',
-    component: Minibio,
+const meta: Meta<typeof ProfilePic> = {
+    title: 'Biocron/Bio/ProfilePic',
+    component: ProfilePic,
     parameters: {
         layout: 'centered',
     },

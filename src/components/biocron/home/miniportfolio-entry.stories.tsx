@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import MiniportfolioEntry from './miniportfolio-entry';
 
 const meta: Meta<typeof MiniportfolioEntry> = {
-    title: 'Biocron/MiniportfolioEntry',
+    title: 'Biocron/Home/MiniportfolioEntry',
     component: MiniportfolioEntry,
     parameters: {
         layout: 'centered',

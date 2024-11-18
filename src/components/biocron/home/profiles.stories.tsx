@@ -3,7 +3,7 @@ import Profiles from './profiles';
 import { BrowserRouter } from 'react-router-dom';
 
 const meta: Meta<typeof Profiles> = {
-    title: 'Biocron/Profiles',
+    title: 'Biocron/Home/Profiles',
     component: Profiles,
     parameters: {
         layout: 'centered',

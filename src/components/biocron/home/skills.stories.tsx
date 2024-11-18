@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Minibio from './minibio';
+import Skills from './skills';
 import { BrowserRouter } from 'react-router-dom';
 
-const meta: Meta<typeof Minibio> = {
-    title: 'Biocron/Home/Minibio',
-    component: Minibio,
+const meta: Meta<typeof Skills> = {
+    title: 'Biocron/Home/Skills',
+    component: Skills,
     parameters: {
         layout: 'centered',
     },
