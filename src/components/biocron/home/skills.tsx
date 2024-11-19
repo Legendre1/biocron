@@ -1,5 +1,4 @@
 import React from 'react';
-import golang from './../assets/golang.png'
 
 const Skills: React.FC  = () => {
 
