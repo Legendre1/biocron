@@ -10,11 +10,11 @@ function HomeScreen() {
   return (
     <>
       <Header />
-      <div className='flex place-content-center w-screen mt-20'>
+      <div className='flex place-content-center items-center  w-screen mt-32'>
         <Minibio />
         <Miniportfolio />
       </div>
-      <div className='flex place-content-center w-screen mt-20'>
+      <div className='flex place-content-center items-center w-screen mt-10'>
         <Skills />
         <Profiles />
       </div>
