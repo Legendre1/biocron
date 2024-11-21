@@ -4,7 +4,7 @@ import Header from './header';
 import { BrowserRouter } from 'react-router-dom';
 
 const meta: Meta<typeof Header> = {
-    title: 'Biocron/Header',
+    title: 'Biocron/Common/Header',
     component: Header,
     parameters: {
         layout: 'none',

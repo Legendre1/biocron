@@ -4,7 +4,7 @@ import FramePanel from './frame-panel';
 import { BrowserRouter } from 'react-router-dom';
 
 const meta: Meta<typeof FramePanel> = {
-    title: 'Biocron/FramePanel',
+    title: 'Biocron/Common/FramePanel',
     component: FramePanel,
     parameters: {
       layout: 'centered',
