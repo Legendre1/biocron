@@ -16,6 +16,6 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-  args: {}
+export const Empty: Story = {
+  args: {classes: 'h-48 w-48'}
 };

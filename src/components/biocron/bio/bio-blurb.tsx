@@ -1,10 +1,9 @@
 import React from 'react';
+import FramePanel from '../frame-panel';
 
 const BioBlurb: React.FC  = () => {
-
-
   return (
-    <div className="bg-gray-900 w-6/12 h-fit rounded-lg mx-4"> 
+    <FramePanel classes="w-6/12 h-fit mx-4"> 
       <div className='flex flex-col items-center justify-center h-fit'>
         <div className='text-center text-4xl my-2'>Bio - Jon L Golden</div>
         <div className='text-center text-xl my-2'>
@@ -20,7 +19,7 @@ const BioBlurb: React.FC  = () => {
           My personal interests include 3rd and 4th generation video games and consoles, vinyl movie soundtracks, and cinema generally.
         </div>
       </div>  
-    </div>
+    </FramePanel>
   );
 };
 

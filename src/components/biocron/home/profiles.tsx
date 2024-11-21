@@ -1,11 +1,13 @@
 import React from 'react';
+import FramePanel from '../frame-panel';
 
 const Profiles: React.FC  = () => {
 
   const githubLink = 'https://github.com/Legendre1';
   const linkedInLink = 'https://www.linkedin.com/in/jon-golden-5515a5176/';
+
   return (
-    <div className="bg-gray-900 w-48 h-36 rounded-lg mx-4"> 
+    <FramePanel classes="w-48 h-36 mx-4"> 
       <div className='text-center text-xl '>Profiles</div>
       <div className='flex items-center'>
         <svg className='mb-3' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72" >
@@ -26,7 +28,7 @@ const Profiles: React.FC  = () => {
         </svg>
       </div>
       
-    </div>
+    </FramePanel>
   );
 };
 
