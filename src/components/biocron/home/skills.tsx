@@ -4,7 +4,7 @@ import FramePanel from '../frame-panel';
 const Skills: React.FC  = () => {
   return (
     <FramePanel classes=" w-96 h-80 "> 
-      <div className='w-96 text-center text-3xl pt-4'>Skills</div>
+      <div className='w-96 text-center text-3xl pt-4 font-title'>Skills</div>
       <div className='flex w-96 h-24 justify-between my-6'>
         
         <svg className='mx-4' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" fill='white' viewBox="0 0 50 50">

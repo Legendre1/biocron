@@ -44,8 +44,8 @@ const MiniportfolioEntry: React.FC<MiniPortfolioProps>  = ({game}) => {
   return (
     <div className="flex flex-col bg-gray-600 h-min w-44 rounded-md m-2"> 
       <img className='h-22 w-42 m-1' src={gameImage} />
-      <div className='text-md'>{gameName}</div>
-      <div className='text-sm'>© {gameOwner}</div>
+      <div className='text-md font-title text-center'>{gameName}</div>
+      <div className='text-sm font-title text-center'>© {gameOwner}</div>
     </div>
   );
 };
