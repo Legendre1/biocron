@@ -3,7 +3,7 @@ import FramePanel from '../frame-panel';
 
 const BioBlurb: React.FC  = () => {
   return (
-    <FramePanel classes="w-6/12 h-fit mx-4"> 
+    <FramePanel classes="w-6/12 h-fit mx-4 p-4"> 
       <div className='flex flex-col items-center justify-center h-fit'>
         <div className='text-center text-4xl my-2'>Bio - Jon L Golden</div>
         <div className='text-center text-xl my-2'>

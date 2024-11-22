@@ -8,16 +8,16 @@ function BioScreen() {
 
 
   return (
-    <>
+    <div>
       <Header />
-      <div className='flex place-content-center w-screen mt-20'> 
+      <div className='flex place-content-center w-screen mt-32'> 
         <ProfilePic />
         <BioBlurb />
       </div>
-      <div className='flex place-content-center w-screen mt-20'>
+      <div className='flex place-content-center w-screen mt-10'>
         <ExpBlurb />
       </div>
-    </>
+    </div>
   )
 }
 
