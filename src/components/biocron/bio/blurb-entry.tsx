@@ -11,9 +11,9 @@ const BlurbEntry: React.FC<BlurbEntryProps>  = ({dateRange, jobTitle, companyNam
 
   return (
     <div className="bg-gray-800 w-80 h-fit my-4 rounded-lg "> 
-        <div>{dateRange}</div>
-        <div>{jobTitle}</div>
-        <div>{companyName}</div>
+        <div className='font-label text-md'>{dateRange}</div>
+        <div className='font-label text-lg'>{jobTitle}</div>
+        <div className='font-label text-md'>{companyName}</div>
     </div>
   );
 };
