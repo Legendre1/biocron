@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'abel': ["Abel", "sans-serif"],
+        'label': ["Abel", "sans-serif"],
+        'title': ["Kanit"],
+        'body': ["Dosis"],
       }
     },
   },

@@ -8,10 +8,10 @@ const Header: React.FC  = () => {
       <div className='basis-24'></div>
       <img className='mx-2 size-16 ' src={logo}></img>
       <div className='basis-1/2'></div>
-      <Link className="mx-2 text-slate-900 dark:text-white text-2xl shrink font-abel" to="/">Home</Link>
-      <Link className='mx-2 text-slate-900 dark:text-white text-2xl shrink font-abel' to="/bio">Bio</Link>
-      <Link className='mx-2 text-slate-900 dark:text-white text-2xl font-abel' to="/portfolio">Portfolio</Link>
-      <Link className='mx-2 text-slate-900 dark:text-white text-2xl font-abel' to="/contact">Contact</Link>
+      <Link className="mx-2 text-slate-900 dark:text-white text-2xl shrink font-label" to="/">Home</Link>
+      <Link className='mx-2 text-slate-900 dark:text-white text-2xl shrink font-label' to="/bio">Bio</Link>
+      <Link className='mx-2 text-slate-900 dark:text-white text-2xl font-label' to="/portfolio">Portfolio</Link>
+      <Link className='mx-2 text-slate-900 dark:text-white text-2xl font-label' to="/contact">Contact</Link>
     </div>
   );
 };
