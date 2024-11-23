@@ -1,13 +1,11 @@
-
 import Header from './../components/biocron/header'
+import Portfolio from './../components/biocron/portfolio/portfolio'
 
 function PortfolioScreen() {
-
-
   return (
     <>
       <Header />
-      <h1>Portfolio</h1>
+      <Portfolio />
     </>
   )
 }
