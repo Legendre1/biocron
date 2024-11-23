@@ -13,10 +13,6 @@ const Miniportfolio: React.FC  = () => {
         <MiniportfolioEntry game='njr' />
         <MiniportfolioEntry game='blackjack'/>
       </div>
-      
-
-      
-
     </FramePanel>
   );
 };
