@@ -4,7 +4,7 @@ import FramePanel from '../frame-panel';
 
 const Miniportfolio: React.FC  = () => {
   return (
-    <FramePanel classes="grid grid-cols-2 w-96 h-96 mx-4"> 
+    <FramePanel classes="grid grid-cols-2 w-96 h-96 mb-2 mt-4"> 
       <MiniportfolioEntry game='pics'/>
       <MiniportfolioEntry game='njr' />
       <MiniportfolioEntry game='papertoss'/>

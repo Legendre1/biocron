@@ -8,8 +8,8 @@ export default {
     extend: {
       fontFamily: {
         'label': ["Abel", "sans-serif"],
-        'title': ["Kanit"],
-        'body': ["Dosis"],
+        'body': ["Kanit"],
+        'title': ["Dosis"],
       }
     },
   },

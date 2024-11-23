@@ -7,7 +7,7 @@ const Profiles: React.FC  = () => {
   const linkedInLink = 'https://www.linkedin.com/in/jon-golden-5515a5176/';
 
   return (
-    <FramePanel classes="w-60 h-48 mx-4"> 
+    <FramePanel classes="w-96 h-48 mx-4 my-2"> 
       <div className='text-center text-3xl font-title my-2'>Profiles</div>
       <div className='flex flex-row justify-center mt-6'>
         <svg className='mb-3 mx-2' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72" >
