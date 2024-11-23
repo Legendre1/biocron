@@ -56,8 +56,23 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'Ninjump Rooftops';
       gameOwner = "Backflip Studios"
       children = 
-        <div>
-          <div>Ninjump Rooftops Content</div>
+        <div className='flex flex-row w-full'>
+          <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsPuzzle} />
+          <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsLava} />
+          <div className='flex flex-col flex-1 mx-2 '>
+            <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from S3 servers, via a custom REST API running on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
+          </div>
+          <div className='flex flex-col mx-4'>
+            <div className='flex flex-col justify-center items-center mx-2 mb-2'>
+              <div className='text-lg font-title text-center w-36'>{gameName}</div>
+              <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+            </div>
+            <div className='flex flex-col justify-center'>
+              <div className='font-title text-md'>Role: Lead Engineer</div>
+              <div className='font-title text-md'>Engine: Lua/C++, Unity tools</div>
+              <div className='font-title text-md'>Platforms: iOS, Android</div>
+            </div>
+          </div>
         </div>
       break;
     }
@@ -70,7 +85,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
           <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsPuzzle} />
           <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsLava} />
           <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses stock images to serve as word hints. The mobile versions includes features such as rotating Daily Puzzles (served from S3 servers, via a custom REST API running on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
+            <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from S3 servers, via a custom REST API running on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
           </div>
           <div className='flex flex-col mx-4'>
             <div className='flex flex-col justify-center items-center mx-2 mb-2'>
@@ -85,9 +100,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
                 <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en">Android</a> and 
                 <a href="https://hashpics.netlify.app">Web</a></div>
             </div>
-            
           </div>
-          
         </div>
       break;
     }
