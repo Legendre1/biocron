@@ -6,10 +6,10 @@ const ExpBlurb: React.FC  = () => {
   return (
     <FramePanel classes="w-6/12 h-fit w-fit px-4 py-1 my-4 mx-4"> 
        <div className='font-title text-2xl'>Work Experience</div>
-       <BlurbEntry dateRange='May 2019 - September 2024' jobTitle='Senior Software Engineer' companyName='Virtual Gaming Worlds' />
-       <BlurbEntry dateRange='Jan 2019 - March 2019' jobTitle='Contract Unity Developer' companyName='Bolder Games' />
-       <BlurbEntry dateRange='Jan 2011 - October 2018' jobTitle='Gameplay Engineer' companyName='Backflip Studios' />
-       <BlurbEntry dateRange='Jan 2014 - Present' jobTitle='Founder, Lead Engineer' companyName='Aureus Studios' />
+       <BlurbEntry body1='May 2019 - September 2024' title='Senior Software Engineer' body2='Virtual Gaming Worlds' />
+       <BlurbEntry body1='Jan 2019 - March 2019' title='Contract Unity Developer' body2='Bolder Games' />
+       <BlurbEntry body1='Jan 2011 - October 2018' title='Gameplay Engineer' body2='Backflip Studios' />
+       <BlurbEntry body1='Jan 2014 - Present' title='Founder, Lead Engineer' body2='Aureus Studios' />
     </FramePanel>
   );
 };

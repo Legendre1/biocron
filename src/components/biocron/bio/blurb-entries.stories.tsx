@@ -17,8 +17,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    dateRange: 'Dec 1980 - Present',
-    jobTitle: 'Pro Nerd',
-    companyName: 'Playing all the games',
+    body1: 'Dec 1980 - Present',
+    title: 'Pro Nerd',
+    body2: 'Playing all the games',
   },
 };

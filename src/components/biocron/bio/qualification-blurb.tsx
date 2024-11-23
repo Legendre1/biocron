@@ -6,11 +6,11 @@ const QualificationBlurb: React.FC  = () => {
   return (
     <FramePanel classes="w-6/12 h-fit w-fit px-4 py-1 my-4 mx-4"> 
        <div className='font-title text-2xl'>Qualifications</div>
-       <BlurbEntry jobTitle='Unity/C#' dateRange='iOS, Android, WebGL -- games and frontend' companyName='Specialties: Physics, Tooling, Rapid Prototyping' />
-       <BlurbEntry jobTitle='Frontend Web' dateRange='React.js, Storybook+Jest, CSS+Tailwind' companyName='' />
-       <BlurbEntry jobTitle='Backend' dateRange='Golang, AWS, SQL' companyName='REST APIs, content delivery' />
-       <BlurbEntry jobTitle='Internal Tools' dateRange='Unity, Python, Lua' companyName='' />
-       <BlurbEntry jobTitle='Mobile Games' dateRange='Xcode, Android Studio' companyName='Specialties: UI/UX, Casual cross-platform games' />
+       <BlurbEntry title='Unity/C#' body1='iOS, Android, WebGL -- games and frontend' body2='Specialties: Physics, Tooling, Rapid Prototyping' />
+       <BlurbEntry title='Frontend Web' body1='React.js, Storybook+Jest, CSS+Tailwind' body2='' />
+       <BlurbEntry title='Backend' body1='Golang, AWS, SQL' body2='REST APIs, content delivery' />
+       <BlurbEntry title='Internal Tools' body1='Unity, Python, Lua' body2='Specialties: Level design, Automation, Preprocessing' />
+       <BlurbEntry title='Mobile Games' body1='Xcode, Android Studio' body2='Specialties: UI/UX, Casual cross-platform games' />
     </FramePanel>
   );
 };
