@@ -3,6 +3,7 @@ import blackjack from './../assets/vgw-blackjack.png'
 import ptBoss from './../assets/pt-boss.png'
 import rooftops from './../assets/rooftops.jpg'
 import pics from './../assets/pics.png'
+import FramePanel from '../frame-panel';
 
 type PortfolioProps = {
   game: string;
@@ -42,11 +43,14 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
   }
 
   return (
-    <div className="flex flex-col bg-gray-600 h-min w-44 rounded-md m-2"> 
-      <img className='w-42 m-1' src={gameImage} />
-      <div className='text-md font-title text-center'>{gameName}</div>
-      <div className='text-sm font-title text-center'>© {gameOwner}</div>
-    </div>
+      <FramePanel classes="flex flex-row w-5/6 h-48 m-4 p-2 even:flex-row-reverse"> 
+        <img className='w-80 m-1 rounded-md aspect-[4/3]' src={gameImage} />
+        <div className='flex flex-col'>
+          <div className='text-md font-title text-center'>{gameName}</div>
+          <div className='text-sm font-title text-center'>© {gameOwner}</div>
+        </div>
+        
+      </FramePanel>
   );
 };
 

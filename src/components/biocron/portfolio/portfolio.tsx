@@ -1,15 +1,15 @@
 import React from 'react';
 import PortfolioEntry from './portfolio-entry';
-import FramePanel from '../frame-panel';
 
 const Miniportfolio: React.FC  = () => {
   return (
-    <FramePanel classes="flex flex-row w-96 h-min mb-2 mt-4"> 
-        <PortfolioEntry game='pics'/>
-        <PortfolioEntry game='papertoss'/>
-        <PortfolioEntry game='njr' />
-        <PortfolioEntry game='blackjack'/>
-    </FramePanel>
+    <div className="flex flex-col items-center w-screen h-min mt-32"> 
+      <div className='text-3xl font-title'>Published Products</div>
+      <PortfolioEntry game='pics'/>
+      <PortfolioEntry game='papertoss'/>
+      <PortfolioEntry game='njr' />
+      <PortfolioEntry game='blackjack'/>
+    </div>
   );
 };
 
