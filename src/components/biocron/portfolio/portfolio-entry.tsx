@@ -123,7 +123,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
         <div className='flex flex-row w-full'>
           <YouTube videoId="PGPgOkHfKH8" opts={videoOptions} />
           <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, costumes, IAP, and much more.</div>
+            <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, leaderboards, costumes, IAP, and much more.</div>
           </div>
           <div className='flex flex-col mx-4'>
             <div className='flex flex-col justify-center items-center mx-2 mb-2'>
@@ -170,7 +170,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
   }
 
   return (
-      <FramePanel classes="flex flex-row w-5/6 h-48 m-4 p-2 even:flex-row-reverse"> 
+      <FramePanel classes="flex flex-row w-5/6 h-96 lg:h-48 m-4 p-2 even:flex-row-reverse"> 
         <img className='w-80 m-1 rounded-md aspect-[4/3]' src={gameImage} />
         {children}
       </FramePanel>
