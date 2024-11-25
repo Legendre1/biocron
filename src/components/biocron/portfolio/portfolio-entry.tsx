@@ -11,7 +11,6 @@ import darkFlowTitle from './../assets/darkFlow/darkFlowTitle.png';
 import papertossTitle from './../assets/papertoss/papertossTitle.webp';
 import papertossGame from './../assets/papertoss/papertossItems.jpg';
 import blackjackTable from './../assets/blackjack/blackjackTable.webp';
-import blackjackWheel from './../assets/blackjack/blackjackWheel.webp';
 
 import YouTube from 'react-youtube';
 
@@ -71,9 +70,6 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Backflip Studios"
       children = 
         <div className='flex flex-row-reverse flex-end w-full'>
-          <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Paper Toss was the original mega-hit paper tossing game from the early App Store. Paper Toss 2.0 (later renamed "Boss") was the follow up which added new items, physics, and interactivity to the original formula.</div>
-          </div>
           <div className='flex flex-col mx-4'>
             <div className='flex flex-col justify-center items-center mx-2 mb-2'>
               <div className='text-lg font-title text-center w-36'>{gameName}</div>
@@ -84,10 +80,13 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               <div className='font-title text-md'>Engine: Lua/C++, later ported to Unity</div>
               <div className='font-title text-md'>Platforms: iOS, Android</div>
             </div>
-            
           </div>
+          <div className='flex flex-col flex-1 mx-2 '>
+            <div className='font-body text-sm overflow-hidden'>Paper Toss was the original mega-hit paper tossing game from the early App Store. Paper Toss 2.0 (later renamed "Boss") was the follow up which added new characters, items, physics, locations, and interactivity to the original formula.</div>
+          </div>
+          
           <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossTitle} />
-            <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossGame} />
+          <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossGame} />
         </div>
       break;
     }
@@ -148,7 +147,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
           <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsPuzzle} />
           <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsLava} />
           <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from S3 servers, via a custom REST API running on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
+            <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from S3 buckets, via a REST API running on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
           </div>
           <div className='flex flex-col mx-4'>
             <div className='flex flex-col justify-center items-center mx-2 mb-2'>
@@ -157,7 +156,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
             </div>
             <div className='flex flex-col justify-center'>
               <div className='font-title text-md'>Role: Designer, Artist, Engineer</div>
-              <div className='font-title text-md'>Engine/Backend: Unity, AWS S3, EC2</div>
+              <div className='font-title text-md'>Engine/Backend: Unity, AWS</div>
               <div className='font-title text-md'>Platforms: 
                 <a href="https://apps.apple.com/us/app/hashpics/id1619576843">iOS</a>,
                 <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en">Android</a> and 
@@ -170,7 +169,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
   }
 
   return (
-      <FramePanel classes="flex flex-row w-5/6 h-96 lg:h-48 m-4 p-2 even:flex-row-reverse"> 
+      <FramePanel classes="flex flex-row w-5/6 h-96 xl:h-48 m-4 p-2 even:flex-row-reverse odd:mr-24 even:ml-24"> 
         <img className='w-80 m-1 rounded-md aspect-[4/3]' src={gameImage} />
         {children}
       </FramePanel>
