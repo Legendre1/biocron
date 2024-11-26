@@ -79,7 +79,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       
       
       <>
-          <div className='flex flex-col xl:flex-row-reverse mx-4 h-full w-1/2 '>
+          <div className='flex flex-col xl:flex-row-reverse mx-4 h-full w-2/5 '>
             <div className='flex flex-row justify-center aspect-w-2 aspect-h-1'>
               <img className=' rounded-md ' src={gameImage} />
             </div>
@@ -175,12 +175,12 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Aureus Studios"
       children = 
         <>
-          <div className='flex flex-col xl:flex-row mx-4 h-full w-1/2 aspect-w-3 aspect-h-5'>
+          <div className='flex flex-col xl:flex-row mx-4 h-full w-2/5 aspect-w-3 aspect-h-5'>
             <div className='flex flex-row justify-center aspect-w-4 aspect-h-3'>
               <img className=' rounded-md ' src={gameImage} />
             </div>
-            <div className='flex flex-col h-full w-full xl:mx-2 justify-start'>
-              <div className='flex flex-col items-center mx-2'>
+            <div className='flex flex-col h-full w-full xl:mx-2 '>
+              <div className='flex flex-col items-center xl:items-start mx-2'>
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
