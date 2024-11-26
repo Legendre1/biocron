@@ -172,35 +172,40 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Aureus Studios"
       children = 
         <>
-          <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
-            <img className='w-80 rounded-md' src={gameImage} />
-          </div>
-          <div className='flex flex-row-reverse flex-end w-full'>
-            <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
-              <img className='w-24 m-1 rounded-md' src={picsPuzzle} />
+          <div className='flex flex-col xl:flex-row mx-4 h-full w-2/5 aspect-w-3 aspect-h-5'>
+            <div className='flex flex-row justify-center aspect-w-4 aspect-h-3'>
+              <img className=' rounded-md ' src={gameImage} />
             </div>
-            <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
-            <img className='w-24 m-1 rounded-md' src={picsLava} />
-            </div>
-            
-            <div className='flex flex-col flex-1 mx-2 '>
-              <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from AWS S3, via a REST API on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
-            </div>
-            <div className='flex flex-col mx-4'>
-              <div className='flex flex-col justify-center items-center mx-2 mb-2'>
+            <div className='flex flex-col w-full xl:mx-2 justify-center'>
+              <div className='flex flex-col justify-center items-center mx-2'>
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
-              <div className='flex flex-col justify-center'>
-                <div className='font-title text-md'>Role: Designer, Artist, Engineer</div>
-                <div className='font-title text-md'>Engine/Backend: Unity, AWS</div>
-                <div className='font-title text-md'>Platforms: 
+              <div className='flex flex-col justify-center h-24'>
+                <div className='font-title text-md text-nowrap'>Role: Designer, Artist, Engineer</div>
+                <div className='font-title text-md text-nowrap'>Engine/Backend: Unity, AWS</div>
+                <div className='font-title text-md text-nowrap'>Platforms: 
                   <a href="https://apps.apple.com/us/app/hashpics/id1619576843">iOS</a>,
                   <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en">Android</a> and 
-                  <a href="https://hashpics.netlify.app">Web</a></div>
+                  <a href="https://hashpics.netlify.app"> Web</a></div>
               </div>
             </div>
           </div>
+          <div className='flex flex-col xl:flex-row w-3/5'>
+            <div className='flex flex-col mx-2 h-min' >
+              <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from AWS S3, via a REST API on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
+            </div>
+            <div className='flex flex-row flex-grow xl:flex-none justify-center'>
+              
+              <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+                <img className='w-40 xl:w-24 m-1 rounded-md' src={picsPuzzle} />
+              </div>
+              <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+                <img className='w-40 xl:w-24 m-1 rounded-md' src={picsLava} />
+              </div>
+            </div>
+          </div>
+          
         </>
         
       break;
@@ -208,7 +213,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
   }
 
   return (
-      <FramePanel classes="flex flex-row w-5/6 h-min lg:h-96 xl:h-48 m-4 p-2 even:flex-row-reverse odd:mr-24 even:ml-24"> 
+      <FramePanel classes="flex flex-row even:flex-row-reverse lg:w-5/6 h-min xl:h-48 m-4 p-2 justify-between odd:mr-24 even:ml-24"> 
         {children}
       </FramePanel>
   );
