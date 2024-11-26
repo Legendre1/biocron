@@ -42,6 +42,10 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'Big Hit Blackjack';
       gameOwner = "Virtual Gaming Worlds"
       children = 
+      <>
+        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+          <img className='w-80 rounded-md' src={gameImage} />
+        </div>
         <div className='flex flex-row-reverse flex-end w-full'>
           <div className='flex flex-col justify-center aspect-w-2 aspect-h-1'>
             <img className='w-72 m-1 rounded-md' src={blackjackTable} />
@@ -60,10 +64,10 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               <div className='font-title text-md'>Engine: Unity</div>
               <div className='font-title text-md'>Platforms: Web, Android</div>
             </div>
-            
           </div>
-          
         </div>
+      </>
+        
       
       break;
     }
@@ -72,6 +76,10 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'Paper Toss Boss';
       gameOwner = "Backflip Studios"
       children = 
+      <>
+        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+          <img className='w-80 rounded-md' src={gameImage} />
+        </div>
         <div className='flex flex-row-reverse flex-end w-full'>
           <div className='flex flex-col mx-4'>
             <div className='flex flex-col justify-center items-center mx-2 mb-2'>
@@ -95,6 +103,8 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
           </div>
           
         </div>
+      </>
+        
       break;
     }
     case "darkflow":{
@@ -102,23 +112,29 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'Dark Flow';
       gameOwner = "Aureus Studios"
       children = 
+      <>
+        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+          <img className='w-80 rounded-md' src={gameImage} />
+        </div>
         <div className='flex flex-row-reverse w-full'>
-          <YouTube videoId="zjnxY1IfpaQ" opts={videoOptions} />
-          <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Dark Flow is an innovative sci-fi arcade-style game, in the tradition of classic console 2D shooters. It uses a proprietary 2.5D game engine to create a flat game-space within a fully realized 3-D space battlefield. Currently under development.</div>
+        <YouTube videoId="zjnxY1IfpaQ" opts={videoOptions} />
+        <div className='flex flex-col flex-1 mx-2 '>
+          <div className='font-body text-sm overflow-hidden'>Dark Flow is an innovative sci-fi arcade-style game, in the tradition of classic console 2D shooters. It uses a proprietary 2.5D game engine to create a flat game-space within a fully realized 3-D space battlefield. Currently under development.</div>
+        </div>
+        <div className='flex flex-col mx-4'>
+          <div className='flex flex-col justify-center items-center mx-2 mb-2'>
+            <div className='text-lg font-title text-center w-36'>{gameName}</div>
+            <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
           </div>
-          <div className='flex flex-col mx-4'>
-            <div className='flex flex-col justify-center items-center mx-2 mb-2'>
-              <div className='text-lg font-title text-center w-36'>{gameName}</div>
-              <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
-            </div>
-            <div className='flex flex-col justify-center'>
-              <div className='font-title text-md'>Roles: Engineer, Designer</div>
-              <div className='font-title text-md'>Engine: Unity</div>
-              <div className='font-title text-md'>Platforms: Consoles, Mac/PC</div>
-            </div>
+          <div className='flex flex-col justify-center'>
+            <div className='font-title text-md'>Roles: Engineer, Designer</div>
+            <div className='font-title text-md'>Engine: Unity</div>
+            <div className='font-title text-md'>Platforms: Consoles, Mac/PC</div>
           </div>
         </div>
+      </div>
+      </>
+        
       break;
     }
     case "njr":{
@@ -126,23 +142,28 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'Ninjump Rooftops';
       gameOwner = "Backflip Studios"
       children = 
-        <div className='flex flex-row w-full'>
-          <YouTube videoId="PGPgOkHfKH8" opts={videoOptions} />
-          <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, leaderboards, costumes, IAP, and much more.</div>
+        <>
+          <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+            <img className='w-80 rounded-md' src={gameImage} />
           </div>
-          <div className='flex flex-col mx-4'>
-            <div className='flex flex-col justify-center items-center mx-2 mb-2'>
-              <div className='text-lg font-title text-center w-36'>{gameName}</div>
-              <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+          <div className='flex flex-row w-full'>
+            <YouTube videoId="PGPgOkHfKH8" opts={videoOptions} />
+            <div className='flex flex-col flex-1 mx-2 '>
+              <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, leaderboards, costumes, IAP, and much more.</div>
             </div>
-            <div className='flex flex-col justify-center'>
-              <div className='font-title text-md'>Role: Lead Engineer</div>
-              <div className='font-title text-md'>Engine: Lua/C++, Unity tools</div>
-              <div className='font-title text-md'>Platforms: iOS, Android</div>
+            <div className='flex flex-col mx-4'>
+              <div className='flex flex-col justify-center items-center mx-2 mb-2'>
+                <div className='text-lg font-title text-center w-36'>{gameName}</div>
+                <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+              </div>
+              <div className='flex flex-col justify-center'>
+                <div className='font-title text-md'>Role: Lead Engineer</div>
+                <div className='font-title text-md'>Engine: Lua/C++, Unity tools</div>
+                <div className='font-title text-md'>Platforms: iOS, Android</div>
+              </div>
             </div>
           </div>
-        </div>
+        </>
       break;
     }
     case "pics":{
@@ -150,41 +171,44 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'hashPICS';
       gameOwner = "Aureus Studios"
       children = 
-        <div className='flex flex-row-reverse flex-end w-full'>
-          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
-            <img className='w-24 m-1 rounded-md' src={picsPuzzle} />
+        <>
+          <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+            <img className='w-80 rounded-md' src={gameImage} />
           </div>
-          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
-          <img className='w-24 m-1 rounded-md' src={picsLava} />
-          </div>
-          
-          <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from S3 buckets, via a REST API running on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
-          </div>
-          <div className='flex flex-col mx-4'>
-            <div className='flex flex-col justify-center items-center mx-2 mb-2'>
-              <div className='text-lg font-title text-center w-36'>{gameName}</div>
-              <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+          <div className='flex flex-row-reverse flex-end w-full'>
+            <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+              <img className='w-24 m-1 rounded-md' src={picsPuzzle} />
             </div>
-            <div className='flex flex-col justify-center'>
-              <div className='font-title text-md'>Role: Designer, Artist, Engineer</div>
-              <div className='font-title text-md'>Engine/Backend: Unity, AWS</div>
-              <div className='font-title text-md'>Platforms: 
-                <a href="https://apps.apple.com/us/app/hashpics/id1619576843">iOS</a>,
-                <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en">Android</a> and 
-                <a href="https://hashpics.netlify.app">Web</a></div>
+            <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+            <img className='w-24 m-1 rounded-md' src={picsLava} />
+            </div>
+            
+            <div className='flex flex-col flex-1 mx-2 '>
+              <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from AWS S3, via a REST API on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
+            </div>
+            <div className='flex flex-col mx-4'>
+              <div className='flex flex-col justify-center items-center mx-2 mb-2'>
+                <div className='text-lg font-title text-center w-36'>{gameName}</div>
+                <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+              </div>
+              <div className='flex flex-col justify-center'>
+                <div className='font-title text-md'>Role: Designer, Artist, Engineer</div>
+                <div className='font-title text-md'>Engine/Backend: Unity, AWS</div>
+                <div className='font-title text-md'>Platforms: 
+                  <a href="https://apps.apple.com/us/app/hashpics/id1619576843">iOS</a>,
+                  <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en">Android</a> and 
+                  <a href="https://hashpics.netlify.app">Web</a></div>
+              </div>
             </div>
           </div>
-        </div>
+        </>
+        
       break;
     }
   }
 
   return (
       <FramePanel classes="flex flex-row w-5/6 h-min lg:h-96 xl:h-48 m-4 p-2 even:flex-row-reverse odd:mr-24 even:ml-24"> 
-        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
-          <img className='w-80 rounded-md' src={gameImage} />
-        </div>
         {children}
       </FramePanel>
   );
