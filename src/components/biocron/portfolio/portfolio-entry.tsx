@@ -76,35 +76,38 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'Paper Toss Boss';
       gameOwner = "Backflip Studios"
       children = 
+      
+      
       <>
-        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
-          <img className='w-80 rounded-md' src={gameImage} />
-        </div>
-        <div className='flex flex-row-reverse flex-end w-full'>
-          <div className='flex flex-col mx-4'>
-            <div className='flex flex-col justify-center items-center mx-2 mb-2'>
-              <div className='text-lg font-title text-center w-36'>{gameName}</div>
-              <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+          <div className='flex flex-col xl:flex-row-reverse mx-4 h-full w-1/2 '>
+            <div className='flex flex-row justify-center aspect-w-2 aspect-h-1'>
+              <img className=' rounded-md ' src={gameImage} />
             </div>
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col h-full  xl:mx-2 justify-start'>
+              <div className='flex flex-col justify-center items-center mx-2 mb-2'>
+                <div className='text-lg font-title text-center w-36'>{gameName}</div>
+                <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+              </div>
               <div className='font-title text-md'>Role: Engineer, Designer</div>
               <div className='font-title text-md'>Engine: Lua/C++, Unity</div>
               <div className='font-title text-md'>Platforms: iOS, Android</div>
             </div>
           </div>
-          <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Paper Toss was the original mega-hit paper tossing game from the early App Store. Paper Toss 2.0 (later renamed "Boss") was the follow up which added new characters, items, physics, locations, and interactivity to the original formula.</div>
+          <div className='flex flex-col xl:flex-row-reverse w-1/2'>
+            <div className='flex flex-col mx-2 h-min' >
+              <div className='font-body text-sm overflow-hidden'>Paper Toss was the original mega-hit paper tossing game from the early App Store. Paper Toss 2.0 (later renamed "Boss") was the follow up which added new characters, items, physics, locations, and interactivity to the original formula.</div>
+            </div>
+            <div className='flex flex-row flex-grow xl:flex-none justify-center'>
+              
+              <div className='flex flex-col justify-center '>
+                <img className='w-40 xl:w-24 m-1 rounded-md' src={papertossTitle} />
+              </div>
+              <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+                <img className='w-40 xl:w-24 m-1 rounded-md' src={papertossGame} />
+              </div>
+            </div>
           </div>
-          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
-            <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossTitle} />
-          </div>
-          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
-            <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossGame} />
-          </div>
-          
-        </div>
-      </>
-        
+        </>
       break;
     }
     case "darkflow":{
@@ -172,7 +175,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Aureus Studios"
       children = 
         <>
-          <div className='flex flex-col xl:flex-row mx-4 h-full w-2/5 aspect-w-3 aspect-h-5'>
+          <div className='flex flex-col xl:flex-row mx-4 h-full w-1/2 aspect-w-3 aspect-h-5'>
             <div className='flex flex-row justify-center aspect-w-4 aspect-h-3'>
               <img className=' rounded-md ' src={gameImage} />
             </div>
@@ -191,7 +194,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               </div>
             </div>
           </div>
-          <div className='flex flex-col xl:flex-row w-3/5'>
+          <div className='flex flex-col xl:flex-row w-1/2'>
             <div className='flex flex-col mx-2 h-min' >
               <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from AWS S3, via a REST API on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
             </div>
