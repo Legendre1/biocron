@@ -43,9 +43,12 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Virtual Gaming Worlds"
       children = 
         <div className='flex flex-row-reverse flex-end w-full'>
-          <img className='w-96 m-1 rounded-md' src={blackjackTable} />
+          <div className='flex flex-col justify-center aspect-w-2 aspect-h-1'>
+            <img className='w-72 m-1 rounded-md' src={blackjackTable} />
+          </div>
+          
           <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Big Hit Blackjack is Luckyland Slots' first table game, with player agency and meaningful gameplay choices. Features include 3-hand simultaneous play, full featured Blackjack actions, and a roulette-style minigame.</div>
+            <div className='font-body text-sm overflow-hidden'>Big Hit Blackjack is first table game from Luckyland Slots. Unlike previous offerings, it allows for player agency and meaningful gameplay choices. Features include 3-hand simultaneous play, full featured Blackjack actions, and a roulette-style minigame.</div>
           </div>
           <div className='flex flex-col mx-4'>
             <div className='flex flex-col justify-center items-center mx-2 mb-2'>
@@ -76,17 +79,21 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
             </div>
             <div className='flex flex-col justify-center'>
-              <div className='font-title text-md'>Role: Engineer, Designer, Voice Actor</div>
-              <div className='font-title text-md'>Engine: Lua/C++, later ported to Unity</div>
+              <div className='font-title text-md'>Role: Engineer, Designer</div>
+              <div className='font-title text-md'>Engine: Lua/C++, Unity</div>
               <div className='font-title text-md'>Platforms: iOS, Android</div>
             </div>
           </div>
           <div className='flex flex-col flex-1 mx-2 '>
             <div className='font-body text-sm overflow-hidden'>Paper Toss was the original mega-hit paper tossing game from the early App Store. Paper Toss 2.0 (later renamed "Boss") was the follow up which added new characters, items, physics, locations, and interactivity to the original formula.</div>
           </div>
+          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+            <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossTitle} />
+          </div>
+          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+            <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossGame} />
+          </div>
           
-          <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossTitle} />
-          <img className='w-24 m-1 rounded-md aspect-[1/2]' src={papertossGame} />
         </div>
       break;
     }
@@ -106,7 +113,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
             </div>
             <div className='flex flex-col justify-center'>
-              <div className='font-title text-md'>Role: Lead Engineer, Lead Designer</div>
+              <div className='font-title text-md'>Roles: Engineer, Designer</div>
               <div className='font-title text-md'>Engine: Unity</div>
               <div className='font-title text-md'>Platforms: Consoles, Mac/PC</div>
             </div>
@@ -144,8 +151,13 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Aureus Studios"
       children = 
         <div className='flex flex-row-reverse flex-end w-full'>
-          <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsPuzzle} />
-          <img className='w-24 m-1 rounded-md aspect-[1/2]' src={picsLava} />
+          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+            <img className='w-24 m-1 rounded-md' src={picsPuzzle} />
+          </div>
+          <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+          <img className='w-24 m-1 rounded-md' src={picsLava} />
+          </div>
+          
           <div className='flex flex-col flex-1 mx-2 '>
             <div className='font-body text-sm overflow-hidden'>hashPICS is a crossword-style puzzle game that uses images as the word hints. The mobile versions includes features such as rotating Daily Puzzles (served from S3 buckets, via a REST API running on EC2,) a metagame with digital currency and unlockables, ad support, and IAP.</div>
           </div>
@@ -169,8 +181,10 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
   }
 
   return (
-      <FramePanel classes="flex flex-row w-5/6 h-96 xl:h-48 m-4 p-2 even:flex-row-reverse odd:mr-24 even:ml-24"> 
-        <img className='w-80 m-1 rounded-md aspect-[4/3]' src={gameImage} />
+      <FramePanel classes="flex flex-row w-5/6 h-min lg:h-96 xl:h-48 m-4 p-2 even:flex-row-reverse odd:mr-24 even:ml-24"> 
+        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+          <img className='w-80 rounded-md' src={gameImage} />
+        </div>
         {children}
       </FramePanel>
   );
