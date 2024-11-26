@@ -176,17 +176,17 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
             <div className='flex flex-row justify-center aspect-w-4 aspect-h-3'>
               <img className=' rounded-md ' src={gameImage} />
             </div>
-            <div className='flex flex-col w-full xl:mx-2 justify-center'>
-              <div className='flex flex-col justify-center items-center mx-2'>
+            <div className='flex flex-col h-full w-full xl:mx-2 justify-start'>
+              <div className='flex flex-col items-center mx-2'>
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
-              <div className='flex flex-col justify-center h-24'>
-                <div className='font-title text-md text-nowrap'>Role: Designer, Artist, Engineer</div>
-                <div className='font-title text-md text-nowrap'>Engine/Backend: Unity, AWS</div>
-                <div className='font-title text-md text-nowrap'>Platforms: 
-                  <a href="https://apps.apple.com/us/app/hashpics/id1619576843">iOS</a>,
-                  <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en">Android</a> and 
+              <div className='flex flex-col justify-end h-max'>
+                <div className='font-label text-md lg:text-nowrap'>Role: Designer, Artist, Engineer</div>
+                <div className='font-label text-md lg:text-nowrap'>Engine/Backend: Unity, AWS</div>
+                <div className='font-label text-md lg:text-nowrap'>Platforms:
+                  <a href="https://apps.apple.com/us/app/hashpics/id1619576843"> iOS</a>,
+                  <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en"> Android</a> and 
                   <a href="https://hashpics.netlify.app"> Web</a></div>
               </div>
             </div>
@@ -205,15 +205,13 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               </div>
             </div>
           </div>
-          
         </>
-        
       break;
     }
   }
 
   return (
-      <FramePanel classes="flex flex-row even:flex-row-reverse lg:w-5/6 h-min xl:h-48 m-4 p-2 justify-between odd:mr-24 even:ml-24"> 
+      <FramePanel classes="flex flex-row even:flex-row-reverse lg:w-5/6 h-min xl:h-48 m-4 p-2 justify-between md:odd:mr-24 md:even:ml-24"> 
         {children}
       </FramePanel>
   );
