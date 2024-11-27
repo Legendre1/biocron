@@ -116,24 +116,26 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Aureus Studios"
       children = 
       <>
-        <div className='flex flex-col justify-center'>
-          <img className='w-80 rounded-md' src={gameImage} />
-        </div>
-        <div className='flex flex-row-reverse w-full'>
-        <YouTube videoId="zjnxY1IfpaQ" opts={videoOptions} />
-        <div className='flex flex-col flex-1 mx-2 '>
-          <div className='font-body text-sm overflow-hidden'>Dark Flow is an innovative sci-fi arcade-style game, in the tradition of classic console 2D shooters. It uses a proprietary 2.5D game engine to create a flat game-space within a fully realized 3-D space battlefield. Currently under development.</div>
-        </div>
-        <div className='flex flex-col mx-4'>
-          <div className='flex flex-col justify-center items-center mx-2 mb-2'>
-            <div className='text-lg font-title text-center w-36'>{gameName}</div>
-            <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+        <div className='flex flex-col xl:flex-row mx-4 h-full w-2/5'>
+          <div className='flex flex-row justify-center'>
+            <img className=' rounded-md ' src={gameImage} />
           </div>
-          <div className='flex flex-col justify-center'>
+          <div className='flex flex-col h-full w-full xl:mx-2 '>
+            <div className='flex flex-col items-center xl:items-start mx-2'>
+              <div className='text-lg font-title text-center w-36'>{gameName}</div>
+              <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+            </div>
+            <div className='flex flex-col justify-end h-max'>
             <div className='font-title text-md'>Roles: Engineer, Designer</div>
             <div className='font-title text-md'>Engine: Unity</div>
             <div className='font-title text-md'>Platforms: Consoles, Mac/PC</div>
+            </div>
           </div>
+        </div>
+        <div className='flex flex-row-reverse w-1/2'>
+        <YouTube videoId="zjnxY1IfpaQ" opts={videoOptions} />
+        <div className='flex flex-col flex-1 mx-2 '>
+          <div className='font-body text-sm overflow-hidden'>Dark Flow is an innovative sci-fi arcade-style game, in the tradition of classic console 2D shooters. It uses a proprietary 2.5D game engine to create a flat game-space within a fully realized 3-D space battlefield. Currently under development.</div>
         </div>
       </div>
       </>
@@ -146,24 +148,24 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Backflip Studios"
       children = 
         <>
-          <div className='flex flex-col justify-center'>
-            <img className='w-80 rounded-md' src={gameImage} />
-          </div>
-          <div className='flex flex-row w-full'>
-            <YouTube videoId="PGPgOkHfKH8" opts={videoOptions} />
-            <div className='flex flex-col flex-1 mx-2 '>
-              <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, leaderboards, costumes, IAP, and much more.</div>
+          <div className='flex flex-col xl:flex-row-reverse mx-4 h-full w-2/5 '>
+            <div className='flex flex-row justify-center'>
+              <img className=' rounded-md ' src={gameImage} />
             </div>
-            <div className='flex flex-col mx-4'>
+            <div className='flex flex-col h-full  xl:mx-2 justify-start'>
               <div className='flex flex-col justify-center items-center mx-2 mb-2'>
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
-              <div className='flex flex-col justify-center'>
-                <div className='font-title text-md'>Role: Lead Engineer</div>
-                <div className='font-title text-md'>Engine: Lua/C++, Unity tools</div>
-                <div className='font-title text-md'>Platforms: iOS, Android</div>
-              </div>
+              <div className='font-title text-md'>Role: Lead Engineer</div>
+              <div className='font-title text-md'>Engine: Lua/C++, Unity tools</div>
+              <div className='font-title text-md'>Platforms: iOS, Android</div>
+            </div>
+          </div>
+          <div className='flex flex-row w-1/2'>
+            <YouTube videoId="PGPgOkHfKH8" opts={videoOptions} />
+            <div className='flex flex-col flex-1 mx-2 '>
+              <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, leaderboards, costumes, IAP, and much more.</div>
             </div>
           </div>
         </>
