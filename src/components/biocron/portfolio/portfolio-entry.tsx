@@ -41,34 +41,36 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameImage = blackjack;
       gameName = 'Big Hit Blackjack';
       gameOwner = "Virtual Gaming Worlds"
-      children = 
+      children =    
       <>
-        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
-          <img className='w-80 rounded-md' src={gameImage} />
-        </div>
-        <div className='flex flex-row-reverse flex-end w-full'>
-          <div className='flex flex-col justify-center aspect-w-2 aspect-h-1'>
-            <img className='w-72 m-1 rounded-md' src={blackjackTable} />
-          </div>
-          
-          <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Big Hit Blackjack is first table game from Luckyland Slots. Unlike previous offerings, it allows for player agency and meaningful gameplay choices. Features include 3-hand simultaneous play, full featured Blackjack actions, and a roulette-style minigame.</div>
-          </div>
-          <div className='flex flex-col mx-4'>
-            <div className='flex flex-col justify-center items-center mx-2 mb-2'>
-              <div className='text-lg font-title text-center w-36'>{gameName}</div>
-              <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+          <div className='flex flex-col xl:flex-row mx-4 h-full w-1/2'>
+            <div className='flex flex-row justify-center aspect-w-2 aspect-h-1'>
+              <img className=' rounded-md ' src={gameImage} />
             </div>
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col h-full w-full xl:mx-2 '>
+              <div className='flex flex-col items-center xl:items-start mx-2'>
+                <div className='text-lg font-title text-center w-36'>{gameName}</div>
+                <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
+              </div>
+              <div className='flex flex-col justify-center'>
               <div className='font-title text-md'>Role: Game Engineer</div>
               <div className='font-title text-md'>Engine: Unity</div>
               <div className='font-title text-md'>Platforms: Web, Android</div>
             </div>
+            </div>
           </div>
-        </div>
-      </>
-        
-      
+          <div className='flex flex-col xl:flex-row w-3/5'>
+            <div className='flex flex-col mx-2 h-min' >
+              <div className='font-body text-sm overflow-hidden'>Big Hit Blackjack is first table game from Luckyland Slots. Unlike previous offerings, it allows for player agency and meaningful gameplay choices. Features include 3-hand simultaneous play, full featured Blackjack actions, and a roulette-style minigame.</div>
+            </div>
+            <div className='flex flex-row flex-grow xl:flex-none justify-center'>
+              
+              <div className='flex flex-col justify-center aspect-w-2 aspect-h-1'>
+                <img className='w-72 md:w-96 xl:w-72 m-1 rounded-md' src={blackjackTable} />
+              </div>
+            </div>
+          </div>
+        </>
       break;
     }
     case "papertoss":{
@@ -76,8 +78,6 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameName = 'Paper Toss Boss';
       gameOwner = "Backflip Studios"
       children = 
-      
-      
       <>
           <div className='flex flex-col xl:flex-row-reverse mx-4 h-full w-2/5 '>
             <div className='flex flex-row justify-center aspect-w-2 aspect-h-1'>
