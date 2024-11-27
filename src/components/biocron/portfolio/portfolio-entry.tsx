@@ -44,8 +44,8 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       children =    
       <>
           <div className='flex flex-col xl:flex-row mx-4 h-full w-1/2'>
-            <div className='flex flex-row justify-center'>
-              <img className='rounded-md' src={gameImage} />
+            <div className='flex flex-row justify-center items-center w-full'>
+              <img className='rounded-md xl:h-40 xl:w-80 ' src={gameImage} />
             </div>
             <div className='flex flex-col h-full w-full xl:mx-2 '>
               <div className='flex flex-col items-center xl:items-start mx-2'>
