@@ -138,6 +138,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
           </div>
           <div className='flex flex-row flex-grow xl:flex-none justify-center'>
             <YouTube className='hidden sm:block' videoId="zjnxY1IfpaQ" opts={videoOptions} />
+            <div className='sm:hidden font-title mt-8'>Rotate device for video</div>
           </div>
         </div>
       </>
@@ -170,6 +171,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
             </div>
             <div className='flex flex-row flex-grow xl:flex-none justify-center'>
               <YouTube className='hidden sm:block' videoId="PGPgOkHfKH8" opts={videoOptions} />
+              <div className='sm:hidden font-title mt-8'>Rotate device for video</div>
             </div>
           </div>
         </>
