@@ -44,8 +44,8 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       children =    
       <>
           <div className='flex flex-col xl:flex-row mx-4 h-full w-1/2'>
-            <div className='flex flex-row justify-center aspect-w-2 aspect-h-1'>
-              <img className=' rounded-md ' src={gameImage} />
+            <div className='flex flex-row justify-center'>
+              <img className='rounded-md' src={gameImage} />
             </div>
             <div className='flex flex-col h-full w-full xl:mx-2 '>
               <div className='flex flex-col items-center xl:items-start mx-2'>
@@ -65,7 +65,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
             </div>
             <div className='flex flex-row flex-grow xl:flex-none justify-center'>
               
-              <div className='flex flex-col justify-center aspect-w-2 aspect-h-1'>
+              <div className='flex flex-col justify-center'>
                 <img className='w-72 md:w-96 xl:w-72 m-1 rounded-md' src={blackjackTable} />
               </div>
             </div>
@@ -80,7 +80,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       children = 
       <>
           <div className='flex flex-col xl:flex-row-reverse mx-4 h-full w-2/5 '>
-            <div className='flex flex-row justify-center aspect-w-2 aspect-h-1'>
+            <div className='flex flex-row justify-center'>
               <img className=' rounded-md ' src={gameImage} />
             </div>
             <div className='flex flex-col h-full  xl:mx-2 justify-start'>
@@ -102,7 +102,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               <div className='flex flex-col justify-center '>
                 <img className='w-40 xl:w-24 m-1 rounded-md' src={papertossTitle} />
               </div>
-              <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+              <div className='flex flex-col justify-center'>
                 <img className='w-40 xl:w-24 m-1 rounded-md' src={papertossGame} />
               </div>
             </div>
@@ -116,7 +116,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Aureus Studios"
       children = 
       <>
-        <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+        <div className='flex flex-col justify-center'>
           <img className='w-80 rounded-md' src={gameImage} />
         </div>
         <div className='flex flex-row-reverse w-full'>
@@ -146,7 +146,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Backflip Studios"
       children = 
         <>
-          <div className='flex flex-col justify-center aspect-w-4 aspect-h-3'>
+          <div className='flex flex-col justify-center'>
             <img className='w-80 rounded-md' src={gameImage} />
           </div>
           <div className='flex flex-row w-full'>
@@ -175,8 +175,8 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       gameOwner = "Aureus Studios"
       children = 
         <>
-          <div className='flex flex-col xl:flex-row mx-4 h-full w-2/5 aspect-w-3 aspect-h-5'>
-            <div className='flex flex-row justify-center aspect-w-4 aspect-h-3'>
+          <div className='flex flex-col xl:flex-row mx-4 h-full w-2/5'>
+            <div className='flex flex-row justify-center'>
               <img className=' rounded-md ' src={gameImage} />
             </div>
             <div className='flex flex-col h-full w-full xl:mx-2 '>
@@ -200,10 +200,10 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
             </div>
             <div className='flex flex-row flex-grow xl:flex-none justify-center'>
               
-              <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+              <div className='flex flex-col justify-center'>
                 <img className='w-40 xl:w-24 m-1 rounded-md' src={picsPuzzle} />
               </div>
-              <div className='flex flex-col justify-center aspect-w-1 aspect-h-2'>
+              <div className='flex flex-col justify-center'>
                 <img className='w-40 xl:w-24 m-1 rounded-md' src={picsLava} />
               </div>
             </div>
