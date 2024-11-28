@@ -1,8 +1,8 @@
-import Header from './../components/biocron/header'
-import Minibio from '../components/biocron/home/minibio'
-import Miniportfolio from '../components/biocron/home/miniportfolio'
-import Profiles from '../components/biocron/home/profiles'
-import Skills from '../components/biocron/home/skills'
+import Header from './../header'
+import Minibio from './../home/minibio'
+import Miniportfolio from './../home/miniportfolio'
+import Profiles from './../home/profiles'
+import Skills from './../home/skills'
 
 function HomeScreen() {
 

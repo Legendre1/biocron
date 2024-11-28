@@ -1,5 +1,5 @@
 
-import Header from './../components/biocron/header'
+import Header from './../header'
 
 function ContactScreen() {
 

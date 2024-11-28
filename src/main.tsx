@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomeScreen from './screens/home-screen.tsx';
-import BioScreen from './screens/bio-screen.tsx';
-import PortfolioScreen from './screens/portfolio-screen.tsx';
-import ContactScreen from './screens/contact-screen.tsx';
+import HomeScreen from './components/biocron/screens/home-screen.tsx'
+import BioScreen from './components/biocron/screens/bio-screen.tsx';
+import PortfolioScreen from './components/biocron/screens/portfolio-screen.tsx';
+import ContactScreen from './components/biocron/screens/contact-screen.tsx';
 
 import './index.css'
 

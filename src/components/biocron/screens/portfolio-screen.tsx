@@ -1,5 +1,5 @@
-import Header from './../components/biocron/header'
-import Portfolio from './../components/biocron/portfolio/portfolio'
+import Header from './../header'
+import Portfolio from './../portfolio/portfolio'
 
 function PortfolioScreen() {
   return (

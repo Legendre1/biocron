@@ -1,9 +1,9 @@
 
-import Header from './../components/biocron/header';
-import ProfilePic from '../components/biocron/bio/profile-pic';
-import BioBlurb from '../components/biocron/bio/bio-blurb';
-import ExpBlurb from '../components/biocron/bio/exp-blurb';
-import QualificationBlurb from '../components/biocron/bio/qualification-blurb';
+import Header from './../header';
+import ProfilePic from './../bio/profile-pic';
+import BioBlurb from './../bio/bio-blurb';
+import ExpBlurb from './../bio/exp-blurb';
+import QualificationBlurb from './../bio/qualification-blurb';
 
 function BioScreen() {
 
