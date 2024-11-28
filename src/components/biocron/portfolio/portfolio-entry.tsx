@@ -61,7 +61,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
           </div>
           <div className='flex flex-col xl:flex-row w-3/5'>
             <div className='flex flex-col mx-2 h-min' >
-              <div className='font-body text-sm overflow-hidden'>Big Hit Blackjack is first table game from Luckyland Slots. Unlike previous offerings, it allows for player agency and meaningful gameplay choices. Features include 3-hand simultaneous play, full featured Blackjack actions, and a roulette-style minigame.</div>
+              <div className='font-body text-sm overflow-hidden'>Big Hit Blackjack is the first table game from Luckyland Slots. Unlike previous offerings, it allows for player agency and meaningful gameplay choices. Features include 3-hand simultaneous play, full featured Blackjack actions, and a roulette-style minigame.</div>
             </div>
             <div className='flex flex-row flex-grow xl:flex-none justify-center'>
               
