@@ -6,7 +6,7 @@ const Minibio: React.FC  = () => {
 
 
   return (
-    <FramePanel classes="flex flex-row w-96 h-64 m-4"> 
+    <FramePanel classes="flex flex-row w-max h-min m-12" isButton={false} onClick={() => {}}> 
       <img className='w-48 h-60 rounded-lg m-2' src={laios}></img>
       <div className='basis-1/2 m-2 flex flex-col '>
         <div className='text-4xl my-2 font-title'>Jon Golden</div>
