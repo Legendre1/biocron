@@ -10,7 +10,7 @@ function ContactScreen() {
   return (
     <>
       <Header />
-      <div className='flex flex-row w-screen p-4 md:p-12 lg:p-24 '>
+      <div className='flex flex-row w-screen mt-12 p-4 md:p-12 lg:p-24 '>
         <div className='w-min'>
           <div className='lg:ml-4 font-label text-xl'>Contact</div>
           <div className='flex flex-col'>
