@@ -1,5 +1,5 @@
 import React from 'react';
-import laios from './../assets/laiosHeadshot.png'
+import monkey from './../assets/monkeySuit.jpg'
 import FramePanel from '../frame-panel';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const Minibio: React.FC  = () => {
 
   return (
     <FramePanel classes="flex flex-row w-max h-min m-12" isButton={true} onClick={() => {navigate('/bio');}}> 
-      <img className='w-48 h-60 rounded-lg m-2' src={laios}></img>
+      <img className='w-48 h-60 rounded-lg m-2' src={monkey}></img>
       <div className='basis-1/2 m-2 flex flex-col '>
         <div className='text-4xl my-2 font-title'>Jon Golden</div>
         <div className='h-4'></div>
