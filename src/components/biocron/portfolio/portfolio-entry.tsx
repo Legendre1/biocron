@@ -40,7 +40,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
     case "blackjack":{
       gameImage = blackjack;
       gameName = 'Big Hit Blackjack';
-      gameOwner = "Virtual Gaming Worlds"
+      gameOwner = "VGW"
       children =    
       <>
           <div className='flex flex-col xl:flex-row mx-4 h-full w-1/2'>
