@@ -4,7 +4,7 @@ import FramePanel from '../frame-panel';
 
 const ExpBlurb: React.FC  = () => {
   return (
-    <FramePanel classes="w-6/12 h-fit w-fit px-4 py-1 my-4 mx-4"> 
+    <FramePanel isButton={false} onClick={() => {}} classes="w-6/12 h-fit w-fit px-4 py-1 my-4 mx-4"> 
        <div className='font-title text-2xl'>Work Experience</div>
        <BlurbEntry body1='May 2019 - September 2024' title='Senior Software Engineer' body2='Virtual Gaming Worlds' />
        <BlurbEntry body1='Jan 2019 - March 2019' title='Contract Unity Developer' body2='Bolder Games' />

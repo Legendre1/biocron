@@ -42,7 +42,7 @@ const ContactEntry: React.FC<ContactEntryProps>  = ({icon, title, children}) => 
   return (
    
       <div className="flex flex-row h-24 w-80 rounded-md flex-start items-center"> 
-        <FramePanel children={svgIcon} classes='flex flex-row w-20 h-20 ml-2 mr-4'></FramePanel>
+        <FramePanel isButton={false} onClick={() => {}} children={svgIcon} classes='flex flex-row w-20 h-20 ml-2 mr-4'></FramePanel>
         <div className='flex flex-col'>
           <div className='font-title text-lg'>{title}</div>
           {children}

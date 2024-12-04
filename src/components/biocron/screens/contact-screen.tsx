@@ -36,7 +36,7 @@ function ContactScreen() {
         </div>
         
         <div className='w-3/5'>
-              <FramePanel classes='' children={''}></FramePanel>
+              <FramePanel isButton={false} onClick={() => {}} classes='' children={''}></FramePanel>
         </div>
       </div>
     </>

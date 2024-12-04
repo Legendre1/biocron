@@ -4,7 +4,7 @@ import FramePanel from '../frame-panel';
 
 const QualificationBlurb: React.FC  = () => {
   return (
-    <FramePanel classes="w-6/12 h-fit w-fit px-4 py-1 my-4 mx-4"> 
+    <FramePanel isButton={false} onClick={() => {}} classes="w-6/12 h-fit w-fit px-4 py-1 my-4 mx-4"> 
        <div className='font-title text-2xl'>Qualifications</div>
        <BlurbEntry title='Unity/C#' body1='iOS, Android, WebGL -- games and frontend' body2='Specialties: Physics, Tooling, Rapid Prototyping' />
        <BlurbEntry title='Frontend Web' body1='React.js, Storybook+Jest, CSS+Tailwind' body2='' />
