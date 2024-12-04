@@ -3,6 +3,7 @@ import blackjack from './../assets/vgw-blackjack.png'
 import ptBoss from './../assets/pt-boss.png'
 import rooftops from './../assets/rooftops.jpg'
 import pics from './../assets/pics.png'
+import flow from './../assets/flow.png'
 
 type MiniPortfolioProps = {
   game: string;
@@ -18,7 +19,7 @@ const MiniportfolioEntry: React.FC<MiniPortfolioProps>  = ({game}) => {
     case "blackjack":{
       gameImage = blackjack;
       gameName = 'Big Hit Blackjack';
-      gameOwner = "Virtual Gaming Worlds"
+      gameOwner = "VGW"
       break;
     }
     case "papertoss":{
@@ -36,6 +37,12 @@ const MiniportfolioEntry: React.FC<MiniPortfolioProps>  = ({game}) => {
     case "pics":{
       gameImage = pics;
       gameName = 'hashPICS';
+      gameOwner = "Aureus Studios"
+      break;
+    }
+    case "darkflow":{
+      gameImage = flow;
+      gameName = 'Dark Flow';
       gameOwner = "Aureus Studios"
       break;
     }

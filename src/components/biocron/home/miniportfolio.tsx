@@ -10,10 +10,10 @@ const Miniportfolio: React.FC  = () => {
     <FramePanel classes="flex flex-row w-min h-min mb-2 mt-4" isButton={true} onClick={() => {navigate('/portfolio');}}> 
       <div className='flex flex-col justify-start'>
         <MiniportfolioEntry game='pics'/>
-        <MiniportfolioEntry game='papertoss'/>
+        <MiniportfolioEntry game='njr' />
       </div>
       <div className='flex flex-col justify-start'>
-        <MiniportfolioEntry game='njr' />
+        <MiniportfolioEntry game='darkflow'/>
         <MiniportfolioEntry game='blackjack'/>
       </div>
     </FramePanel>

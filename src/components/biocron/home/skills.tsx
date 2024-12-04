@@ -3,7 +3,7 @@ import FramePanel from '../frame-panel';
 
 const Skills: React.FC  = () => {
   return (
-    <FramePanel classes=" w-min h-80 "> 
+    <FramePanel isButton={false} onClick={() => {}} classes=" h-80 "> 
       <div className='w-96 text-center text-3xl pt-4 font-title'>Skills</div>
       <div className='flex w-96 h-24 justify-between my-6'>
         
