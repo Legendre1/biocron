@@ -242,7 +242,7 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
   }
 
   return (
-      <FramePanel classes="flex flex-row even:flex-row-reverse lg:w-5/6 h-min xl:h-48 m-4 p-2 justify-between md:odd:mr-24 md:even:ml-24"> 
+      <FramePanel isButton={false} onClick={() => {}} classes="flex flex-row even:flex-row-reverse lg:w-5/6 h-min xl:h-48 m-4 p-2 justify-between md:odd:mr-24 md:even:ml-24"> 
         {children}
       </FramePanel>
   );
