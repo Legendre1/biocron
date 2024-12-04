@@ -30,8 +30,8 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
     width: '330',
     
     playerVars: {
-      autoplay: 1, // Enable autoplay
-      mute: 1, // You might need to mute to enable autoplay
+      autoplay: 0,
+      mute: 1, 
       start: 66,
     },
   };
@@ -48,15 +48,18 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               <img className='rounded-md xl:h-40 xl:w-80 ' src={gameImage} />
             </div>
             <div className='flex flex-col h-full w-full xl:mx-2 '>
-              <div className='flex flex-col items-center xl:items-start mx-2'>
+              <div className='flex flex-col items-center mx-2'>
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
-              <div className='flex flex-col justify-center'>
-              <div className='font-title text-md'>Role: Game Engineer</div>
-              <div className='font-title text-md'>Engine: Unity</div>
-              <div className='font-title text-md'>Platforms: Web, Android</div>
-            </div>
+              
+              <div className='h-2'></div>
+              <div className='font-title text-md text-center'>Role: Game Engineer</div>
+              <div className='h-1'></div>
+              <div className='font-title text-md text-center'>Engine: Unity</div>
+              <div className='h-1'></div>
+              <div className='font-title text-md text-center'>Platforms: Web, Android</div>
+          
             </div>
           </div>
           <div className='flex flex-col xl:flex-row w-3/5'>
@@ -88,9 +91,12 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
-              <div className='font-title text-md'>Role: Engineer, Designer</div>
-              <div className='font-title text-md'>Engine: Lua/C++, Unity</div>
-              <div className='font-title text-md'>Platforms: iOS, Android</div>
+              <div className='h-2'></div>
+              <div className='font-title text-md text-center'>Role: Engineer, Designer</div>
+              <div className='h-1'></div>
+              <div className='font-title text-md text-center'>Engine: Lua/C++, Unity</div>
+              <div className='h-1'></div>
+              <div className='font-title text-md text-center'>Platforms: iOS, Android</div>
             </div>
           </div>
           <div className='flex flex-col xl:flex-row-reverse w-1/2'>
@@ -117,29 +123,36 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       children = 
       <>
         <div className='flex flex-col xl:flex-row mx-4 h-full w-2/5'>
-          <div className='flex flex-row justify-center'>
-            <img className=' rounded-md ' src={gameImage} />
-          </div>
           <div className='flex flex-col h-full w-full xl:mx-2 '>
             <div className='flex flex-col items-center xl:items-start mx-2'>
               <div className='text-lg font-title text-center w-36'>{gameName}</div>
               <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
             </div>
             <div className='flex flex-col justify-end h-max'>
-            <div className='font-title text-md'>Roles: Engineer, Designer</div>
-            <div className='font-title text-md'>Engine: Unity</div>
-            <div className='font-title text-md'>Platforms: Consoles, Mac/PC</div>
+            <div className='h-2'></div>
+            <div className='font-title text-md text-center'>Roles: Engineer, Designer</div>
+            <div className='h-1'></div>
+            <div className='font-title text-md text-center'>Engine: Unity</div>
+            <div className='h-1'></div>
+            <div className='font-title text-md text-center'>Consoles, Mac/PC</div>
+            <div className='h-1'></div>
+            <a href="http://www.darkflowgame.com/" className='font-title text-md text-center'>Homepage</a>
             </div>
           </div>
+          <div className='flex flex-row justify-center'>
+            <img className=' rounded-md ' src={gameImage} />
+          </div>
+          
         </div>
         <div className='flex flex-col xl:flex-row w-1/2'>
-          <div className='flex flex-col flex-1 mx-2 '>
-            <div className='font-body text-sm overflow-hidden'>Dark Flow is an innovative sci-fi arcade-style game, in the tradition of classic console 2D shooters. It uses a proprietary 2.5D game engine to create a flat game-space within a fully realized 3-D space battlefield. Currently under development.</div>
-          </div>
           <div className='flex flex-row flex-grow xl:flex-none justify-center'>
             <YouTube className='hidden sm:block' videoId="zjnxY1IfpaQ" opts={videoOptions} />
             <div className='sm:hidden font-title mt-8'>Rotate device for video</div>
           </div>
+          <div className='flex flex-col flex-1 mx-2 '>
+            <div className='font-body text-sm overflow-hidden'>Dark Flow is an innovative sci-fi arcade-style game, in the tradition of classic console 2D shooters. It uses a proprietary 2.5D game engine to create a flat game-space within a fully realized 3-D space battlefield. Currently under development.</div>
+          </div>
+          
         </div>
       </>
         
@@ -152,26 +165,30 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
       children = 
         <>
           <div className='flex flex-col xl:flex-row-reverse mx-4 h-full w-2/5 '>
-            <div className='flex flex-row justify-center'>
-              <img className=' rounded-md ' src={gameImage} />
-            </div>
-            <div className='flex flex-col h-full  xl:mx-2 justify-start'>
+          <div className='flex flex-col h-full  xl:mx-2 justify-start'>
               <div className='flex flex-col justify-center items-center mx-2 mb-2'>
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
-              <div className='font-title text-md'>Role: Lead Engineer</div>
-              <div className='font-title text-md'>Engine: Lua/C++, Unity tools</div>
-              <div className='font-title text-md'>Platforms: iOS, Android</div>
+              <div className='h-2'></div>
+              <div className='font-title text-md text-center text-center'>Role: Lead Engineer</div>
+              <div className='h-1'></div>
+              <div className='font-title text-md text-center text-center'>Engine: Lua/C++</div>
+              <div className='h-1'></div>
+              <div className='font-title text-md text-center text-center'>Platforms: iOS, Android</div>
             </div>
+            <div className='flex flex-row justify-center'>
+              <img className=' rounded-md ' src={gameImage} />
+            </div>
+            
           </div>
           <div className='flex flex-col xl:flex-row-reverse w-1/2'>
-            <div className='flex flex-col flex-1 mx-2 '>
-              <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, leaderboards, costumes, IAP, and much more.</div>
-            </div>
             <div className='flex flex-row flex-grow xl:flex-none justify-center'>
               <YouTube className='hidden sm:block' videoId="PGPgOkHfKH8" opts={videoOptions} />
               <div className='sm:hidden font-title mt-8'>Rotate device for video</div>
+            </div>
+            <div className='flex flex-col flex-1 mx-2 '>
+              <div className='font-body text-sm overflow-hidden'>Ninjump Rooftops is the first sequel in the highly successful Ninjump series of mobile games. It is a rich and colorful 3D platformer, with an expansive metagame, a pachinko-style minigame, leaderboards, costumes, IAP, and much more.</div>
             </div>
           </div>
         </>
@@ -188,14 +205,17 @@ const PortfolioEntry: React.FC<PortfolioProps>  = ({game}) => {
               <img className=' rounded-md ' src={gameImage} />
             </div>
             <div className='flex flex-col h-full w-full xl:mx-2 '>
-              <div className='flex flex-col items-center xl:items-start mx-2'>
+              <div className='flex flex-col items-center mx-2'>
                 <div className='text-lg font-title text-center w-36'>{gameName}</div>
                 <div className='text-md font-title text-center w-36'>© {gameOwner}</div>
               </div>
               <div className='flex flex-col justify-end h-max'>
-                <div className='font-label text-md lg:text-nowrap'>Role: Designer, Artist, Engineer</div>
-                <div className='font-label text-md lg:text-nowrap'>Engine/Backend: Unity, AWS</div>
-                <div className='font-label text-md lg:text-nowrap'>Platforms:
+              <div className='h-2'></div>
+                <div className='font-label text-md lg:text-nowrap text-center'>Role: Designer, Artist, Engineer</div>
+                <div className='h-1'></div>
+                <div className='font-label text-md lg:text-nowrap text-center'>Engine/Backend: Unity, AWS</div>
+                <div className='h-1'></div>
+                <div className='font-label text-md lg:text-nowrap text-center'>Platforms:
                   <a href="https://apps.apple.com/us/app/hashpics/id1619576843"> iOS</a>,
                   <a href="https://play.google.com/store/apps/details?id=com.aureusstudios.hashpics&hl=en"> Android</a> and 
                   <a href="https://hashpics.netlify.app"> Web</a></div>
