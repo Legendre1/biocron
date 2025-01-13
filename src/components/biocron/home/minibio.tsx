@@ -10,7 +10,7 @@ const Minibio: React.FC  = () => {
   return (
     <FramePanel classes="flex flex-row w-max h-min m-12" isButton={true} onClick={() => {navigate('/bio');}}> 
       <img className='w-48 h-60 rounded-lg m-2' src={monkey}></img>
-      <div className='basis-1/2 m-2 flex flex-col '>
+      <div className='w-24 md:w-40 m-2 flex flex-col '>
         <div className='text-4xl my-2 font-title'>Jon Golden</div>
         <div className='h-4'></div>
         <div className='text-md my-1 font-body'>Founder, Aureus Studios</div>
